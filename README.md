@@ -1,24 +1,7 @@
-# README
+# Example: Docker-Compose running 2 Docker Containers
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In addition to the Rails app, this app also contains a PostgreSQL service running in a 2nd docker container.
 
-Things you may want to cover:
+Use `docker-compose build` to build the docker images, and `docker-compose up` to start the whole thing. Then, go over to `http://localhost:3000` or `http://192.168.99.100:3000` (W10 Home) to access the app.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ Examine `Dockerfile` and `docker-compose.yml` and `config/database.yml` to see how the 2 docker containers are linked.
